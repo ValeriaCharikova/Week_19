@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend class="text_bold">Информация о питомце</legend>
+        <div>
+          <label for="catName">Укажите кличку питомца*</label>
+          <input type="text" id="catName" placeholder="Кличка" required />
+        </div>
+        <br />
+        <div>
+          <label for="age">Укажите возраст питомца</label>
+          <input type="number" id="age" placeholder="Возраст" min="1" />
+        </div>
+        <br />
+        <div>
+          <label for="sex">Укажите пол питомца</label> <br />
+          Жен <input type="radio" id="sex" name="sex" value="female" /> <br />
+          Муж <input type="radio" name="sex" value="male" />
+        </div>
+        <br />
+        <div>
+          Укажите породу питомца
+          <select id="breed">
+            <option value="1" selected="selected">Выберите породу</option>
+            <option value="2">Абиссинская</option>
+            <option value="3">Британская</option>
+            <option value="4">Мейн-кун</option>
+            <option value="5">Персидская</option>
+            <option value="6">Сиамская</option>
+            <option value="7">Тайская</option>
+            <option value="8">Другая</option>
+          </select>
+        </div>
+        <br />
+        <p>Какой тип корма предпочитает питомец (можно выбрать несколько):</p>
+        <input type="checkbox" name="food" value="Сухой корм" />
+        Сухой корм<br />
+        <input type="checkbox" name="food" value="Влажный корм" />
+        Влажный корм <br />
+        <input type="checkbox" name="food" value="Натуральный корм" />
+        Натуральный корм <br />
+        <p>Дополнительная информация о питомце:</p>
+        <div>
+          <textarea
+            placeholder="Добавьте комментарий"
+            rows="10"
+            cols="50"
+          ></textarea>
+        </div>
+        <br />
+        <div>
+          Добавьте фото питомца <input type="file" />
+          <input type="button" value="Загрузить" />
+        </div>
+      </fieldset>
+      <br />
+      <input type="button" value="Сохранить" onclick="Save()" />
+    </form>
+
+    <script src="./task2.js"></script>
+  </body>
+</html>
